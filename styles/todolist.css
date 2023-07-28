@@ -1,0 +1,89 @@
+.tools-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-list {
+  max-width: 1800px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+@media (min-width: 500px) {
+  .todo-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 1000px) {
+  .todo-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1400px) {
+  .todo-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1600px) {
+  .todo-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.input-task-field {
+  margin: 5px;
+  width: 30%;
+  height: 25px;
+}
+.button-task-field {
+  height: 25px;
+  margin: 5px;
+}
+.button-task-field:hover {
+  cursor: pointer;
+  background-color: #05951480;
+}
+.task-button {
+  font-weight: bold;
+  padding: 5px;
+}
+.task-button:hover {
+  cursor: pointer;
+}
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+}
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 5px;
+  width: 400px;
+  font-size: 16px;
+  border: 1px solid #0b0b0080;
+  border-radius: 5px;
+}
+.task-inprogress {
+  background-color: #0000ff33;
+}
+.task-inprogress > div:first-of-type {
+  font-weight: bold;
+  color: #00ff;
+}
+.task-completed {
+  background-color: #05951433;
+}
+.task-completed > div:first-of-type {
+  text-decoration: line-through;
+  color: #059514;
+}
+.disabled-button {
+  pointer-events: none;
+  opacity: 0.4;
+}
+.selectlist {
+  height: 25px;
+  margin: 5px;
+}
